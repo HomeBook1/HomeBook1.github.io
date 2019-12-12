@@ -33,6 +33,8 @@
 			  <li>Отдохнуть:)</li>
 			</ul>
 			</div>
+			<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+			</fb:login-button>
 		</div>
 	</div>
 		
@@ -99,10 +101,10 @@
   
   window.fbAsyncInit = function() {
     FB.init({
-      appId      : '{your-app-id}',
+      appId      : '763630314064160',
       cookie     : true,
       xfbml      : true,
-      version    : '{api-version}'
+      version    : 'v5.0'
     });
       
     FB.AppEvents.logPageView();   
@@ -116,6 +118,16 @@
      js.src = "https://connect.facebook.net/en_US/sdk.js";
      fjs.parentNode.insertBefore(js, fjs);
    }(document, 'script', 'facebook-jssdk'));
+   
+   FB.getLoginStatus(function(response) {
+    statusChangeCallback(response);
+});
+
+function checkLoginState() {
+  FB.getLoginStatus(function(response) {
+    statusChangeCallback(response);
+  });
+}
 
 </script>
 
