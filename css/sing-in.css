@@ -105,11 +105,8 @@
 
 
 /* add appropriate colors to fb, twitter and google buttons */
-	.fb {
-	  background-color: #3B5998;
-	  color: white;
-	  text-align: center;
-	  margin-right: 15%;
+	#fb-btn {
+	  margin-left: 75%;
 	}
 
 }
