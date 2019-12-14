@@ -1,0 +1,290 @@
+@media screen and (max-width: 812px ){
+	body{
+		background-color: #e3e3e3;
+	
+	}
+
+	select{
+		border:none;
+		background-color: #e3e3e3;
+	}
+
+	input{
+		text-align: center;
+		font-family:'Bahnschrift';
+		background-color: white;
+	}
+
+	h1{
+		font-size:32px;
+		text-align:center;
+		font-family:'Forte';
+		color:#8B53A6;
+	}
+
+	h2{
+		padding-top: 5%;
+		font-size:24px;
+		text-align: center;
+		font-family:'Bahnschrift';
+		color:#8B53A6;
+	}
+
+	a{
+		 text-decoration: none;
+		 color:#8B53A6;
+	}
+
+	hr{
+		margin-top: 10px;
+	}
+
+	
+	.imag{
+		width: 50%;
+		height:50%;
+		padding: 10px;
+	}
+
+	.image-men{
+		width: 48%;
+		height:40%;
+		padding-top: 37%;
+		padding-left: 17px;
+	}
+
+	.imag-arrow{
+		width: 40%;
+		height:40%;
+		padding-left:23px;
+		padding-top: 17px;
+	}
+
+
+
+	.grid{
+		display: grid;		
+    	height: 97vh;
+    	grid-gap: 2px;
+    	margin:0 auto;
+	}
+
+	.main{
+		margin: 0;
+		grid-template-rows: 0.1fr 0.3fr 1fr;
+		background-color:;
+	}
+
+	
+
+	.color{
+		background-color: green;
+	}
+	
+	
+	/*-----------------------------Header---------------------------*/
+
+	.block{
+		display: grid;		
+    	height: 100%;
+    	grid-template-rows:0.5fr 0.7fr ;
+	}
+
+	.head-logo{
+		display:flex;
+		flex-direction: column;
+		margin-top: 7%;
+		align-items: center;
+    	background-color:;
+	}
+
+
+
+
+	.grid-footer{
+		display: grid;		
+    	height: 100%;
+    	grid-template-rows:0.1fr 0.1fr;
+		grid-gap: 10px;
+	}
+
+	.block-form{
+		display: grid;		
+    	height: 100%;
+    	grid-template-columns: 0.3fr 1fr 0.4fr;
+    	margin-top: -7px;
+	}
+
+	
+
+	.block-logo{
+		display: grid;		
+    	height: 100%;
+    	grid-template-columns: 0.4fr 1fr 0.4fr;
+    	
+	}
+
+	.menu{
+		border-radius: 15px;
+		border:1px solid #8B53A6;
+		box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+	}
+
+	.menu:active{
+		border-radius: 15px;
+		background-color: green;
+		box-shadow: none;
+	}
+
+
+	.data-forget{
+		margin-left: 5px;
+		font-size:90%;
+		text-align:center;
+		font-family:'Bahnschrift';
+		letter-spacing: 1px;
+		line-height: 1.4;
+		color:#8B53A6;
+	}
+
+	.sing-up{
+		font-size:100%;
+		text-align: center;
+		font-family:'Bahnschrift';
+		letter-spacing: 1px;
+		line-height: 1;
+		color:#8B53A6;
+	}
+
+	.marg-sing{
+		margin-top: -3px;
+		line-height: 1.2;
+	}
+
+	.padd{
+		margin-top: -11px;
+		font-size:12px;
+		text-align: center;
+		font-family:'Bahnschrift';
+		letter-spacing: 1px;
+		line-height: 1;
+		color:#8B53A6;
+	}
+
+
+	.input-email{
+		width: 250px;
+		height: 35px;
+		border-radius: 7px;
+		border:none;
+		box-shadow: 0 7px 7px rgba(0,0,0,0.4);
+	}
+
+	.block-arrow:active{
+		border-radius: 15px;
+		background-color: green;
+	}
+
+	.collapsible {
+	    background-color:#e3e3e3;
+	    font-family:'Bahnschrift Light';
+	    color: #8B53A6;
+	    cursor: pointer;
+	    padding: 15px;
+	    width: 100%;
+	    border: none;
+	    text-align: left;
+	    outline: none;
+	    font-size: 15px;
+	    border:1px solid #8B53A6;
+	    border-radius: 10px;
+	    margin-top: 3px;
+	}
+
+	.content {
+	    padding: 0 18px;
+	    max-height: 0;
+	    overflow: hidden;
+	    transition: max-height 0.2s ease-out;
+	    background-color: #e3e3e3;
+	}
+
+
+
+	.filterDiv {
+	  display: none;
+	}
+
+	.show {
+	  display: block;
+	}
+
+	.container {
+	  margin-top: 20px;
+	  overflow: hidden;
+	}
+
+	/* Style the buttons */
+	.btn {
+	  border: 1px solid #8B53A6;
+	  outline: none;
+	  padding: 12px 16px;
+	  background-color: #e3e3e3;
+	  cursor: pointer;
+	  font-family:'Bahnschrift Light';
+	  color: #8B53A6; 
+	  font-size: 15px;
+	  width: 49%;
+	  border-radius:10px;
+	}
+
+	
+
+	.btn.active {
+	  background-color: #8B53A6;
+	  color: white;
+	}
+
+
+
+
+	
+}
+
+
+
+@media screen and (min-height: 600px) {
+
+	h1{
+		font-size: 250%;
+	}
+
+	.btn {
+	  font-size: 110%;
+	  padding:16px 19px;
+	}
+
+	.input-email{
+		width: 40vh;
+		height: 6vh;
+	}
+
+
+
+	.sing-up{
+		font-size: 120%;
+	}
+
+	.data-forget{
+		font-size: 120%;
+	}
+
+	.collapsible {
+	    padding: 18px;
+	    font-size: 120%;
+	    margin-top: 3%;
+	    height: 30%;
+	}
+
+
+}
