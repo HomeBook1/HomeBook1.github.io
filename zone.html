@@ -4,41 +4,44 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" href="css/rutine.css">
+	<link rel="stylesheet" href="css/zone.css">
 	<!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">-->
     <title>Home book</title>
 </head>
     <body>
-	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v5.0&appId=763630314064160&autoLogAppEvents=1"></script>
+	
 	<div class="grid main">
 		<div class="head-logo">
 			<div>
 				<a href="head-menu.html"><img src="double-left.png" class="image-men" alt=""></a>
 			</div>
 			<div>
-				<h2>Утренняя рутина</h2>
-			</div>
-			<div></div>
-		</div>
-			<div >
-
-			<div id="myDIV" class="header">
-			  <input type="text" id="myInput" placeholder="Title...">
-			  <span onclick="newElement()" class="addBtn">Add</span>
+				<h2>Зона 2: Кухня</h2>
 			</div>
 			<div>
-			<ul id="myUL">
-			  <li>Зарегистрироваться</li>
-			  <li class="checked">Пройти тест</li>
-			  <li>Отдохнуть:)</li>
-			</ul>
 			</div>
-			<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
-			</fb:login-button>
 		</div>
-	</div>
-		
 
+		<div class="ex-content">
+     <p class="zagol">Не пытайтесь выполнять весь план, пока Вы не закончили расхламление Вашей кухни.</p>
+      <p class="zagol">  Потратьте 15 минут в день на расхламление, а потом Вы можете начать делать что-то из детальной уборки. Не переживайте об этом. Вы не делали этого годами и лишний месяц ничего не испортит.</p>
+      <p class="zagol"> Избавьтесь сначала от хлама. Будет легче убирать.</p>
+		</div>
+
+    <div class="grid-footer">
+      <div>
+      <form action="">
+        <button class="btn">Отложить</button>
+      </form>
+      </div>
+      <div>
+      <form action="">
+        <button class="btn active">Начать</button>
+      </form>
+      </div>
+    </div>
+		
+</div>
 
 
 
@@ -98,37 +101,6 @@
       }
     }
   }
-  
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '763630314064160',
-      cookie     : true,
-      xfbml      : true,
-      version    : 'v5.0'
-    });
-      
-    FB.AppEvents.logPageView();   
-      
-  };
-
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "https://connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-   
-   FB.getLoginStatus(function(response) {
-    statusChangeCallback(response);
-});
-
-function checkLoginState() {
-  FB.getLoginStatus(function(response) {
-    statusChangeCallback(response);
-  });
-}
-
 </script>
 
 

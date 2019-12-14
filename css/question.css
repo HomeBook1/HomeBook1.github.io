@@ -1,0 +1,220 @@
+
+@media screen and (max-width: 823px){
+	body{
+		background-color:  #e3e3e3;
+	}
+
+	select{
+		border:none;
+		background-color:  #e3e3e3;
+	}
+
+	input{
+		/*text-align: center;*/
+		font-family:'Bahnschrift';
+	}
+
+	h1{
+		font-size:32px;
+		text-align:center;
+		font-family:'Forte';
+		color:#8B53A6;
+	}
+
+	a{
+		 text-decoration: none;
+		 color:#8B53A6;
+	}
+
+	hr{
+		margin-top: 10px;
+	}
+	
+	.image-men{
+		width: 70%;
+		height:35%;
+		padding-top: 60%;
+		padding-left:55%;
+	}
+
+	.grid{
+		display: grid;		
+    	height: 97vh;
+	}
+
+	.main{
+		margin: 0;
+		grid-template-rows: 0.3fr 0.6fr 0.1fr;
+		background-color:;
+	}
+
+
+	.color{
+		background-color: green;
+	}
+	
+	
+	/*-----------------------------Header---------------------------*/
+
+
+	.head-logo{
+		display:flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+    	background-color:;
+	}
+
+
+
+
+
+	.data-forget{
+		margin-left: 5px;
+		font-size:17px;
+		text-align:left;
+		font-family:'Garamond';
+		letter-spacing: 1px;
+		line-height: 1;
+		color:#8B53A6;
+	}
+
+	.sing-up{
+		margin-top: -0px;
+		font-size:18px;
+		text-align: center;
+		font-family:'Bahnschrift';
+		letter-spacing: 2px;
+		line-height: 1;
+		color:#8B53A6;
+	}
+
+	.sign-face{
+		padding-left:5px;
+		font-size:14px;
+		text-align: left;
+		font-family:'Bahnschrift';
+		letter-spacing: 1px;
+		line-height: 1.5;
+		color:#8B53A6;
+	}
+
+	.input-email{
+		width: 250px;
+		height: 35px;
+		border-radius: 7px;
+		border:none;
+		box-shadow: 0 7px 7px rgba(0,0,0,0.4);
+	}
+
+
+
+	/* The container */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+	/* Hide the browser's default radio button */
+	.container input {
+	    position: absolute;
+	    opacity: 0;
+	    cursor: pointer;
+	}
+
+	/* Create a custom radio button */
+	.checkmark {
+	    position: absolute;
+	    top:0;
+	    left: 0;
+	    height: 20px;
+	    width: 20px;
+	    background-color: #eee;
+	    border-radius: 50%;
+	}
+
+	/* On mouse-over, add a grey background color */
+	.container:hover input ~ .checkmark {
+	    background-color: #ccc;
+	}
+
+	/* When the radio button is checked, add a blue background */
+	.container input:checked ~ .checkmark {
+	    background-color: #8B53A6;
+	}
+
+	/* Create the indicator (the dot/circle - hidden when not checked) */
+	.checkmark:after {
+	    content: "";
+	    position: absolute;
+	    display: none;
+	}
+
+	/* Show the indicator (dot/circle) when checked */
+	.container input:checked ~ .checkmark:after {
+	    display: block;
+	}
+
+	/* Style the indicator (dot/circle) */
+	.container .checkmark:after {
+	 	top: 6px;
+		left:6.5px;
+		width: 8px;
+		height: 8px;
+		border-radius: 50%;
+		background: white;
+	}
+
+
+	.dot {
+	  cursor: pointer;
+	  height: 15px;
+	  width: 15px;
+	  margin: 0 2px;
+	  background-color: #bbb;
+	  border-radius: 50%;
+	  display: inline-block;
+	  transition: background-color 0.6s ease;
+	}
+
+	.active, .dot:hover {
+	  background-color: #8B53A6;
+	}
+}
+
+@media screen and (min-height: 600px) {
+
+	h1{
+		font-size: 250%;
+	}
+
+	input{
+	
+		font-size: 100%;
+	}
+
+
+
+	.sing-up{
+		font-size: 140%;
+	}
+
+	.sign-face{
+		font-size: 130%;
+	}
+
+	.dot {
+	  height: 25px;
+	  width: 25px;
+	}
+
+
+}
