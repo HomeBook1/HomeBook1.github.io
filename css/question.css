@@ -47,15 +47,6 @@
 		background-color:;
 	}
 
-
-	.color{
-		background-color: green;
-	}
-	
-	
-	/*-----------------------------Header---------------------------*/
-
-
 	.head-logo{
 		display:flex;
 		flex-direction: column;
@@ -65,24 +56,11 @@
 	}
 
 
-
-
-
-	.data-forget{
-		margin-left: 5px;
-		font-size:17px;
-		text-align:left;
-		font-family:'Garamond';
-		letter-spacing: 1px;
-		line-height: 1;
-		color:#8B53A6;
-	}
-
 	.sing-up{
 		margin-top: -0px;
 		font-size:18px;
 		text-align: center;
-		font-family:'Bahnschrift';
+		font-family: 'Pacifico', cursive;
 		letter-spacing: 2px;
 		line-height: 1;
 		color:#8B53A6;
@@ -92,11 +70,17 @@
 		padding-left:5px;
 		font-size:14px;
 		text-align: left;
-		font-family:'Bahnschrift';
+		font-family: 'Play', sans-serif;
 		letter-spacing: 1px;
 		line-height: 1.5;
 		color:#8B53A6;
 	}
+
+		.container-label{
+		display: grid;	
+		grid-template-rows: ;
+	}
+
 
 	.input-email{
 		width: 250px;

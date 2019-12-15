@@ -88,6 +88,18 @@
 		line-height: 1.2;
 	}
 
+	.zagol{
+		margin-top: 5%;
+		margin-left: 2%;
+		font-size:14px;
+		font-family:'Bahnschrift Light';
+		letter-spacing: 1px;
+		line-height: 1;
+		color:#8B53A6;
+		text-align: left;
+	}
+
+
 
 	.input-email{
 		width: 250px;
