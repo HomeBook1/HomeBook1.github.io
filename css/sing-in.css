@@ -100,14 +100,11 @@
 	  display: inline-block;
 	  font-size: 14px;
 	  line-height: 20px;
-	  text-decoration: none; /* remove underline from anchors */
+	  text-decoration: none;
 	}
 
 
-/* add appropriate colors to fb, twitter and google buttons */
-	#fb-btn {
-	  margin-left: 45%;
-	}
+
 }
 
 
