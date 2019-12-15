@@ -5,12 +5,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="css/question.css">
-
-
-
 	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-	<script src="question1.js"></script>
-	<!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js">
+		 $(window).on('load', function () {
+		    $preloader = $('.loaderArea'),
+		      $loader = $preloader.find('.loader');
+		    $loader.fadeOut();
+		    $preloader.delay(3).fadeOut('slow');
+		  });
+</script>
     <title>Question</title>
 </head>
     <body>
@@ -37,7 +40,11 @@
 						  <input type="radio" checked="checked" name="radio">
 						  <span class="checkmark"></span>
 						</label>
-					
+
+
+					<div class="">
+   						<div class="loader"></div>
+					</div>
 					
 						<label class="container"><p class="sign-face"></p><input type="radio" checked="checked" name="radio">
 						  <span class="checkmark"></span>
