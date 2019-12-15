@@ -12,16 +12,16 @@
 
 	input{
 		text-align: center;
-		font-family:'Bahnschrift';
+		font-family: 'Play', sans-serif;
 		background-color: white;
 		margin-top: 10%;
 	}
 
 
 	h1{
-		font-size:32px;
+		font-size:40px;
 		text-align:center;
-		font-family:'Forte';
+		font-family: 'Lobster', cursive;
 		color:#8B53A6;
 	}
 
@@ -40,15 +40,6 @@
 		grid-template-rows: 0.2fr 1fr 1fr;
 	}
 
-
-
-	
-	
-	
-
-	/*-----------------------------Header---------------------------*/
-
-
 	.head-logo{
 		display:flex;
 		flex-direction: column;
@@ -58,21 +49,11 @@
 	}
 
 	.data-forget{
-		margin-top: -3px;
+		margin-top: 3%;
 		font-size:14px;
 		text-align:center;
-		font-family:'Garamond';
+		font-family: 'Play', sans-serif;
 		letter-spacing: 1px;
-		line-height: 1.5;
-		color:#8B53A6;
-	}
-
-	.sign-face{
-		margin-top: 17px;
-		font-size:18px;
-		text-align: center;
-		font-family:'Impact';
-		letter-spacing: 2px;
 		line-height: 1.5;
 		color:#8B53A6;
 	}
@@ -89,20 +70,6 @@
 		background-color:#8B53A6 ;
 		color: #e3e3e3;
 	}
-
-	.btn {
-	  width: 60%; 
-	  padding: 12px;
-	  border: none;
-	  border-radius: 4px;
-	  margin: 2% 0 0 15%;
-	  opacity: 0.85;
-	  display: inline-block;
-	  font-size: 14px;
-	  line-height: 20px;
-	  text-decoration: none;
-	}
-
 	
 }
 

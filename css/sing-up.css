@@ -11,7 +11,7 @@
 
 	input{
 		text-align: center;
-		font-family:'Bahnschrift';
+		font-family: 'Play', sans-serif;
 		background-color: white;
 		color: #8B53A6;
 		margin-top: 7%;
@@ -20,7 +20,7 @@
 	h1{
 		font-size:32px;
 		text-align:center;
-		font-family:'Forte';
+		font-family: 'Lobster', cursive;
 		color:#8B53A6;
 	}
 
@@ -44,15 +44,6 @@
 		grid-template-rows: 1fr 2fr ;
 	}
 
-
-	
-	
-	
-
-	/*-----------------------------Header---------------------------*/
-
-
-
 	.head-logo{
 		display:flex;
 		flex-direction: column;
@@ -75,7 +66,7 @@
 		margin-top: -3px;
 		font-size:14px;
 		text-align:center;
-		font-family:'Garamond';
+		font-family: 'Play', sans-serif;
 		letter-spacing: 1px;
 		line-height: 1.5;
 		color:#8B53A6;
@@ -85,7 +76,7 @@
 		margin-top: -0px;
 		font-size:18px;
 		text-align: center;
-		font-family:'Bahnschrift';
+		font-family: 'Pacifico', cursive;
 		letter-spacing: 2px;
 		line-height: 1;
 		color:#8B53A6;

@@ -4,17 +4,12 @@
 		background-color: #e3e3e3;
 	}
 
-	select{
-		border:none;
-		background-color: #e3e3e3;
-	}
-
-input{
+	input{
 		margin-top: 15%;
 		padding-top: 3%;
 		width: 90%;
 		height: 40%;
-		font-family:'Bahnschrift';
+		font-family: 'Play', sans-serif;
 		border-radius: 10px;
 		border:none;
 		color:#DCD2E1;
@@ -22,9 +17,10 @@ input{
 	}
 
 	h2{
+		margin-top: -75%;
 		font-size:18px;
 		text-align:center;
-		font-family:'Yu Gothic UI Semibold';
+		font-family: 'Lobster', cursive;
 		color:black;
 	}
 
@@ -33,36 +29,11 @@ input{
 		 color:white;
 	}
 
-	hr{
-		margin-top: 9%;
-	}
 
-	
-	.imag{
-		width: 50%;
-		height:65%;
-		padding-left: 15%;
-		padding-top: 0px;
-	}
-
-	.imag:active{
-		width: 51%;
-		height:65%;
-	}
-
-	.image-men{
-		width: 50%;
-		height:45%;
-		padding-top: 24%;
-		padding-left: 20%;
-	}
-
-	.imag-arrow{
-		width: 40%;
-		height:40%;
-		padding-left:23px;
-		padding-top: 17px;
-		background-size:cover;
+	.image{
+		width: 13%;
+		height:60%;
+		padding-left: 7%;
 	}
 
 
@@ -77,65 +48,11 @@ input{
 		grid-template-rows: 0.1fr 1fr;	
 	}
 
-	
-
-	.color{
-		background-color: green;
-	}
-	
-	
-	/*-----------------------------Header---------------------------*/
-
-	.block{
-		display: grid;		
-    	height: 100%;
-    	grid-template-rows:0.1fr 0.3fr ;
-	}
 
 	.head-logo{
 		display: grid;		
-    	height: 100%;
+    	height: 7vh;
     	grid-template-columns:0.3fr 1fr 0.3fr;
-	}
-
-
-
-	.grid-footer{
-		display: grid;		
-    	height: 100%;
-    	grid-template-rows:0.1fr 1fr ;
-		grid-gap: 0px;
-	}
-
-	.block-form{
-		display: grid;		
-    	height: 95%;
-    	grid-template-columns:0.4fr 1fr 0.4fr;
-    	background-color:#DCD2E1 ;
-    	border-bottom:1px solid grey;
-	}
-
-	
-
-	.block-logo{
-		display: grid;		
-    	height: 100%;
-    	width: 100%;
-    	grid-template-columns: 1fr 0.4fr;
-    	grid-template-rows:1.2fr 1.2fr 1.2fr 1fr; 
-	}
-
-	.yes-no{
-		display: grid;		
-    	height: 100%;
-    	grid-template-columns: 0.4fr 0.7fr 0.2fr 0.2fr;
-	}
-
-	.yes-no-fon{
-		background-size:cover;
-		background-position:center;
-		background-image: url(https://c7.hotpng.com/preview/111/998/429/x-mark-check-mark-desktop-wallpaper-clip-art-x-mark.jpg);
-		height: 95%;
 	}
 
 	.menu{
@@ -144,12 +61,6 @@ input{
 		box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 		background-color:; 
 	}
-
-	/*.menu:active{
-		border-radius: 15px;
-		background-color: green;
-		box-shadow: none;
-	}*/
 
 
 	.data-forget{
@@ -166,7 +77,7 @@ input{
 		padding-top:6%;
 		font-size:18px;
 		text-align: left;
-		font-family:'Corbel';
+		font-family: 'Pacifico', cursive;
 		letter-spacing: 1.5px;
 		line-height: 1;
 		color:#8B53A6;
@@ -176,18 +87,6 @@ input{
 		margin-top: -3px;
 		line-height: 1.2;
 	}
-
-	.zagol{
-		margin-top: 5%;
-		margin-left: 2%;
-		font-size:14px;
-		font-family:'Bahnschrift Light';
-		letter-spacing: 1px;
-		line-height: 1;
-		color:#8B53A6;
-		text-align: left;
-	}
-
 
 
 	.input-email{
@@ -210,7 +109,7 @@ input{
   padding: 12px 8px 12px 40px;
   list-style-type: none;
   background:  #d9d9d9;
-  font-family:'Bahnschrift Light';
+  font-family: 'Play', sans-serif;
   color:#8B53A6;
   letter-spacing: 1px;
   font-size: 15px;

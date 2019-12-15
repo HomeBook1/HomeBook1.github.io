@@ -4,47 +4,26 @@
 	
 	}
 
-	select{
-		border:none;
-		background-color: #e3e3e3;
-	}
 
 	input{
 		text-align: center;
-		font-family:'Bahnschrift';
+		font-family: 'Play', sans-serif;
 		background-color: white;
 	}
 
 	h1{
 		font-size:32px;
 		text-align:center;
-		font-family:'Forte';
+		font-family: 'Lobster', cursive;
 		color:#8B53A6;
 	}
 
-	h2{
-		padding-top: 5%;
-		font-size:24px;
-		text-align: center;
-		font-family:'Bahnschrift';
-		color:#8B53A6;
-	}
 
 	a{
 		 text-decoration: none;
 		 color:#8B53A6;
 	}
 
-	hr{
-		margin-top: 10px;
-	}
-
-	
-	.imag{
-		width: 50%;
-		height:50%;
-		padding: 10px;
-	}
 
 	.image-men{
 		width: 48%;
@@ -52,15 +31,6 @@
 		padding-top: 37%;
 		padding-left: 17px;
 	}
-
-	.imag-arrow{
-		width: 40%;
-		height:40%;
-		padding-left:23px;
-		padding-top: 17px;
-	}
-
-
 
 	.grid{
 		display: grid;		
@@ -74,21 +44,7 @@
 		grid-template-rows: 0.1fr 0.3fr 1fr;
 		background-color:;
 	}
-
 	
-
-	.color{
-		background-color: green;
-	}
-	
-	
-	/*-----------------------------Header---------------------------*/
-
-	.block{
-		display: grid;		
-    	height: 100%;
-    	grid-template-rows:0.5fr 0.7fr ;
-	}
 
 	.head-logo{
 		display:flex;
@@ -97,25 +53,6 @@
 		align-items: center;
     	background-color:;
 	}
-
-
-
-
-	.grid-footer{
-		display: grid;		
-    	height: 100%;
-    	grid-template-rows:0.1fr 0.1fr;
-		grid-gap: 10px;
-	}
-
-	.block-form{
-		display: grid;		
-    	height: 100%;
-    	grid-template-columns: 0.3fr 1fr 0.4fr;
-    	margin-top: -7px;
-	}
-
-	
 
 	.block-logo{
 		display: grid;		
@@ -137,20 +74,12 @@
 	}
 
 
-	.data-forget{
-		margin-left: 5px;
-		font-size:90%;
-		text-align:center;
-		font-family:'Bahnschrift';
-		letter-spacing: 1px;
-		line-height: 1.4;
-		color:#8B53A6;
-	}
+
 
 	.sing-up{
 		font-size:100%;
 		text-align: center;
-		font-family:'Bahnschrift';
+		font-family: 'Pacifico', cursive;
 		letter-spacing: 1px;
 		line-height: 1;
 		color:#8B53A6;
@@ -187,7 +116,7 @@
 
 	.collapsible {
 	    background-color:#e3e3e3;
-	    font-family:'Bahnschrift Light';
+	    font-family: 'Play', sans-serif;
 	    color: #8B53A6;
 	    cursor: pointer;
 	    padding: 15px;
@@ -231,7 +160,7 @@
 	  padding: 12px 16px;
 	  background-color: #e3e3e3;
 	  cursor: pointer;
-	  font-family:'Bahnschrift Light';
+	  font-family: 'Play', sans-serif;
 	  color: #8B53A6; 
 	  font-size: 15px;
 	  width: 49%;

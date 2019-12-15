@@ -13,7 +13,7 @@
 
 	input{
 		text-align: center;
-		font-family:'Bahnschrift';
+		font-family: 'Kanit', sans-serif;
 		color: #8B53A6;
 		margin-top: 40%;
 	}
@@ -31,15 +31,6 @@
 		 color:#8B53A6;
 	}
 
-	hr{
-		margin-top: 10px;
-	}
-	
-	.imag-arrow{
-		width: 8%;
-		height:8%;
-		padding-left:47%;
-	}
 
 	.grid{
 		display: grid;		
@@ -50,13 +41,6 @@
 	.main{
 		grid-template-rows: 1fr 5fr ;
 	}
-
-
-	
-	
-	
-
-	/*-----------------------------Header---------------------------*/
 
 	.block{
 		display: grid;		
@@ -72,8 +56,6 @@
     	background-color:;
 	}
 
-
-
 	.grid-footer{
 		display: grid;		
     	height: 100%;
@@ -88,39 +70,15 @@
     	
 	}
 
-
-
-	.data-forget{                           
-		font-size:15px;
-		text-align:center;
-		vertical-align:middle;
-		font-family:'Yu Gothic UI Semibold';
-		letter-spacing: 1px;
-		line-height: 1.5;
-		color:#8B53A6;
-	}
-
-	.opac{
-		opacity: 0.6;
-	}
-
 	.sing-up{
 		font-size:18px;
 		text-align: center;
-		font-family:'Haettenschweiler';
+		font-family: 'Pacifico', cursive;
 		letter-spacing: 2px;
 		line-height: 2;
 		color:#8B53A6;
 	}
 
-	.sing-face{ 
-		font-size:15px;
-		text-align: center;
-		font-family:'Bahnschrift';
-		letter-spacing: 2px;
-		line-height: 1.5;
-		color:#8B53A6;
-	}
 
 	.input-email{
 		width: 100%;
@@ -153,33 +111,8 @@
 	  padding: 8px 10px;
 	}
 
-	.btn {
-	  width: 60%; 
-	  padding: 12px;
-	  border: none;
-	  border-radius: 4px;
-	  margin: 2% 0 0 15%;
-	  opacity: 0.85;
-	  display: inline-block;
-	  font-size: 14px;
-	  line-height: 20px;
-	  text-decoration: none; 
-	}
-
-
-	.fb {
-	  background-color: #3B5998;
-	  color: white;
-	  text-align: center;
-
-}
 
 @media screen and (min-height: 600px) {
-	.btn {
-	  font-size: 120%;
- 
-	}
-
 	h1{
 		font-size: 300%;
 	}
