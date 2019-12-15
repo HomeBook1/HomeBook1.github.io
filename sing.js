@@ -10,7 +10,7 @@
             statusChangeCallback(response);
         });
       };
-      
+
       (function(d, s, id){
          var js, fjs = d.getElementsByTagName(s)[0];
          if (d.getElementById(id)) {return;}
@@ -34,7 +34,7 @@
         });
       }
       function testAPI(){
-        FB.api('/me?fields=name,email,birthday,location', function(response){
+        FB.api('/me?fields=name,email', function(response){
           if(response && !response.error){
             //console.log(response);
             buildProfile(response);
