@@ -28,7 +28,7 @@
            console.log('Logged in and authenticated');
           // setElements(true);
            window.location.replace("head-menu.html");
-           //testAPI();
+           testAPI();
          } else {
            console.log('Not authenticated');
            //setElements(false);
@@ -42,12 +42,12 @@
       function testAPI(){
         FB.api('/me?fields=name,email', function(response){
           if(response && !response.error){
-            //console.log(response);
+            console.log(response);
             buildProfile(response);
           }
           FB.api('/me/feed', function(response){
             if(response && !response.error){
-              buildFeed(response);
+              //buildFeed(response);
             }
           });
         })
