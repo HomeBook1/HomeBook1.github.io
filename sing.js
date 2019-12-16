@@ -26,11 +26,12 @@
        function statusChangeCallback(response){
          if(response.status === 'connected'){
            console.log('Logged in and authenticated');
-           setElements(true);
-           testAPI();
+          // setElements(true);
+           window.location.replace("head-menu.html");
+           //testAPI();
          } else {
            console.log('Not authenticated');
-           setElements(false);
+           //setElements(false);
          }
        }
       function checkLoginState() {
@@ -69,6 +70,6 @@
       }
       function logout(){
         FB.logout(function(response){
-          setElements(false);
+         // setElements(false);
         });
       }
