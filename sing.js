@@ -27,8 +27,8 @@
          if(response.status === 'connected'){
            console.log('Logged in and authenticated');
           // setElements(true);
+          testAPI();
            window.location.replace("head-menu.html");
-           testAPI();
          } else {
            console.log('Not authenticated');
            //setElements(false);
