@@ -22,7 +22,7 @@
            console.log('Logged in and authenticated');
           // setElements(true);
           testAPI();
-           window.location.replace("question.html");
+           window.location.replace("question.html?p=1");
          } else {
            console.log('Not authenticated');
            //setElements(false);
