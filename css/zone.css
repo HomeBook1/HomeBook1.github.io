@@ -40,33 +40,13 @@ input{
 	}
 
 	
-	.imag{
-		width: 50%;
-		height:65%;
-		padding-left: 15%;
-		padding-top: 0px;
-	}
-
-	.imag:active{
-		width: 51%;
-		height:65%;
-	}
 
 	.image-men{
 		width: 50%;
-		height:45%;
+		height:40%;
 		padding-top: 24%;
 		padding-left: 20%;
 	}
-
-	.imag-arrow{
-		width: 40%;
-		height:40%;
-		padding-left:23px;
-		padding-top: 17px;
-		background-size:cover;
-	}
-
 
 
 	.grid{
@@ -80,10 +60,6 @@ input{
 		grid-gap: 5px;
 	}
 
-	
-
-	
-	/*-----------------------------Header---------------------------*/
 
 	.block{
 		display: grid;		
