@@ -36,12 +36,12 @@ for (i = 0; i < coll.length; i++) {
        function statusChangeCallback(response){
          if(response.status === 'connected'){
            console.log('Logged in and authenticated');
-          // setElements(true);
+           setElements(true);
            //window.location.replace("head-menu.html");
            //testAPI();
          } else {
            console.log('Not authenticated');
-           //setElements(false);
+           setElements(false);
          }
        }
       function checkLoginState() {
@@ -50,10 +50,26 @@ for (i = 0; i < coll.length; i++) {
         });
       }
 
+       function setElements(isLoggedIn){
+        if(isLoggedIn){
+          document.getElementById('logout').style.display = 'block';
+          document.getElementById('profile').style.display = 'block';
+          document.getElementById('feed').style.display = 'block';
+          document.getElementById('fb-btn').style.display = 'none';
+          document.getElementById('heading').style.display = 'none';
+        } else {
+          document.getElementById('logout').style.display = 'none';
+          document.getElementById('profile').style.display = 'none';
+          document.getElementById('feed').style.display = 'none';
+          document.getElementById('fb-btn').style.display = 'block';
+          document.getElementById('heading').style.display = 'block';
+        }
+      }
+
      
 
       function logout(){
         FB.logout(function(response){
-         // setElements(false);
+         setElements(false);
         });
       }
