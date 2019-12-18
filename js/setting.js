@@ -70,6 +70,6 @@ for (i = 0; i < coll.length; i++) {
 
       function logout(){
         FB.logout(function(response){
-         setElements(false);
+         window.location.replace("sing-in.html");
         });
       }
