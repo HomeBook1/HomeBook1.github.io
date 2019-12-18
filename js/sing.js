@@ -70,6 +70,6 @@
       }
       function logout(){
         FB.logout(function(response){
-         // setElements(false);
+          window.location.replace("sing-in.html");
         });
       }
