@@ -10,6 +10,8 @@
   <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Play&display=swap" rel="stylesheet">
+
+  
     <title>Rutina</title>
 </head>
     <body>
@@ -26,139 +28,24 @@
 			<div></div>
 		</div>
 
-
 		<div >
 			<div id="myDIV" class="header">
 			  <input type="text" id="myInput" placeholder="Title...">
-			  <span onclick="newElement()" class="addBtn">Add</span>
+			  <span 1onclick="newElement()" class="addBtn">Add</span>
 			</div>
 			<div>
 			<ul id="myUL">
 			  <li>Зарегистрироваться</li>
 			  <li class="checked">Пройти тест</li>
 			  <li>Отдохнуть:)</li>
+			  <li></li>
+			  <li></li>
+			  <li></li>
 			</ul>
 			</div>
 		</div>
 	</div>
-		
-
-
-
-
-<script>
-const url = "https://api-euwest.graphcms.com/v1/ck3ohp7e3nq9e01ff33nm3ipb/master";
-
-function getQueryVariable(variable)
-{
-    let query = window.location.search.substring(1);
-    let vars = query.split("&");
-    for (let i=0;i<vars.length;i++) {
-        let pair = vars[i].split("=");
-        if(pair[0] === variable){return pair[1];}
-    }
-    return(false);
-}
-
-let pageRut = getQueryVariable('id'); 
-const timeRoutineQuery = `{
- pageRutine (where:{id:"${pageRut}"}){
-    time
-  }
-}`;
-
-let pageRutine = [];
-axios.post(url, {query: timeRoutineQuery})
-    .then(response => {
-        pageRutine = response.data.data.pageRutine;
-        console.log(pageRutine);
-        let time = document.getElementById("time");
-        time.textContent = pageRutine.time;
-    })
-; 
-
-//mutation
-
-
-
-
-// Create a "close" button and append it to each list item
-  var myNodelist = document.getElementsByTagName("LI");
-  var i;
-  for (i = 0; i < myNodelist.length; i++) {
-    var span = document.createElement("SPAN");
-    var txt = document.createTextNode("\u00D7");
-    span.className = "close";
-    span.appendChild(txt);
-    myNodelist[i].appendChild(span);
-  }
-
-  // Click on a close button to hide the current list item
-  var close = document.getElementsByClassName("close");
-  var i;
-  for (i = 0; i < close.length; i++) {
-    close[i].onclick = function() {
-      var div = this.parentElement;
-      div.style.display = "none";
-    }
-  }
-
-  // Add a "checked" symbol when clicking on a list item
-  var list = document.querySelector('ul');
-  list.addEventListener('click', function(ev) {
-    if (ev.target.tagName === 'LI') {
-      ev.target.classList.toggle('checked');
-    }
-  }, false);
-
-  // Create a new list item when clicking on the "Add" button
-  function newElement() {
-    var li = document.createElement("li");
-    var inputValue = document.getElementById("myInput").value;
-    var t = document.createTextNode(inputValue);
-    li.appendChild(t);
-    if (inputValue === '') {
-      alert("You must write something!");
-    } else {
-      document.getElementById("myUL").appendChild(li);
-    }
-    document.getElementById("myInput").value = "";
-
-    var span = document.createElement("SPAN");
-    var txt = document.createTextNode("\u00D7");
-    span.className = "close";
-    span.appendChild(txt);
-    li.appendChild(span);
-
-    for (i = 0; i < close.length; i++) {
-      close[i].onclick = function() {
-        var div = this.parentElement;
-        div.style.display = "none";
-      }
-    };
-
-    let bodyRut = li.value;
-    //let typeRut = document.querySelector(".edit .task").value;
-    let newRutine = `mutation createRutine{
-    createRutine(
-      data:{
-      bodyRutine:"${bodyRut}"
-      status: PUBLISHED
-      }) {
-        id
-      }
-     }`;
-    axios.post(url, {query: newRutine})
-      .then(response => {
-          let createRutine = response.data.data.createRutine; 
-          if (createRutine) {
-            alert("Изменение данных произведено успешно!");
-         }
-      });
-  }
-</script>
-
-
+<script src="js/rutina.js"></script>
     </body>
 </html>
 
