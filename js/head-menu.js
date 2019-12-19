@@ -29,7 +29,7 @@ function w3RemoveClass(element, name) {
   }
   element.className = arr1.join(" ");
 }
-/*
+
 // Add active class to the current button (highlight it)
 let btnContainer = document.getElementById("myBtnContainer");
 let btns = btnContainer.getElementsByClassName("btn");
@@ -39,11 +39,11 @@ for (var i = 0; i < btns.length; i++) {
     current[0].className = current[0].className.replace(" active", "");
     this.className += " active";
   });
-}*/
+}
 
 
 let coll = document.getElementsByClassName("collapsible");
-let i;
+var i;
 
 for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
