@@ -33,6 +33,7 @@ for (i = 0; i < coll.length; i++) {
          js.src = "https://connect.facebook.net/en_US/sdk.js";
          fjs.parentNode.insertBefore(js, fjs);
        }(document, 'script', 'facebook-jssdk'));
+
        function statusChangeCallback(response){
          if(response.status === 'connected'){
            console.log('Logged in and authenticated');
@@ -70,6 +71,6 @@ for (i = 0; i < coll.length; i++) {
 
       function logout(){
         FB.logout(function(response){
-         setTimeout(window.location.replace("sing-in.html"),1800);
+         setTimeout(window.location.replace("sing-in.html"),3600);
         });
       }
