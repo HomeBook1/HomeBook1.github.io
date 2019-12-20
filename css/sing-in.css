@@ -70,6 +70,10 @@
 		background-color:#8B53A6 ;
 		color: #e3e3e3;
 	}
+
+	.opac{
+		opacity: 0.6;
+	}
 	
 }
 

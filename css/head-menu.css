@@ -74,7 +74,9 @@
 	}
 
 
-
+	.opac{
+		opacity: 0.6;
+	}
 
 	.sing-up{
 		font-size:100%;

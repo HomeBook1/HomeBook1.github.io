@@ -60,7 +60,9 @@
     	grid-template-rows:1fr 0.9fr  ;
 	}
 
-
+	.opac{
+		opacity: 0.6;
+	}
 
 	.data-forget{
 		margin-top: -3px;
