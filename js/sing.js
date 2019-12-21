@@ -29,7 +29,8 @@
            console.log('Logged in and authenticated');
           // setElements(true);
           testAPI();
-           window.location.replace("head-menu.html");
+          setTimeout(window.location.replace("head-menu.html",1800);
+           
          } else {
            console.log('Not authenticated');
            //setElements(false);
