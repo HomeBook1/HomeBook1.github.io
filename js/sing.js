@@ -9,6 +9,7 @@
           appId : '763630314064160',
           autoLogAppEvents : true,
           xfbml : true,
+          verification_uri: "head-menu.html",
           version : 'v5.0'  
         });
         FB.getLoginStatus(function(response) {
