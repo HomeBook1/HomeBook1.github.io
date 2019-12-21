@@ -29,7 +29,7 @@
            console.log('Logged in and authenticated');
           // setElements(true);
           testAPI();
-          setTimeout(window.location.replace("head-menu.html",1800);
+          setTimeout(window.location.replace("head-menu.html",1800));
            
          } else {
            console.log('Not authenticated');
