@@ -29,7 +29,7 @@
            console.log('Logged in and authenticated');
           // setElements(true);
           testAPI();
-          setTimeout(window.location.replace("head-menu.html",1800));
+          window.location.replace("head-menu.html");
            
          } else {
            console.log('Not authenticated');
@@ -41,7 +41,7 @@
           statusChangeCallback(response);
         });
       }
-      function testAPI(){
+      /*function testAPI(){
         FB.api('/me?fields=name,email', function(response){
           if(response && !response.error){
             console.log(response);
@@ -53,7 +53,16 @@
             }
           });
         })
-      }
+      }*/
+
+      function testAPI() {                      // Testing Graph API after login.  See statusChangeCallback() for when this call is made.
+    console.log('Welcome!  Fetching your information.... ');
+    FB.api('/me', function(response) {
+      console.log('Successful login for: ' + response.name);
+      document.getElementById('status').innerHTML =
+        'Thanks for logging in, ' + response.name + '!';
+    });
+  }
 
       function setElements(isLoggedIn){
         if(isLoggedIn){
