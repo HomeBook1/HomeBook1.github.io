@@ -71,6 +71,6 @@ for (i = 0; i < coll.length; i++) {
 
       function logout(){
         FB.logout(function(response){
-         setTimeout(window.location.replace("sing-in.html"),3600);
+         setTimeout(window.location.replace("sing-in.html"),7200);
         });
       }
