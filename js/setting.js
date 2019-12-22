@@ -111,3 +111,9 @@ for (i = 0; i < coll.length; i++) {
         'Thanks for logging in, ' + response.name + '!';
     });
   }
+
+   function logout(){
+        FB.logout(function(response){
+         setTimeout(window.location.replace("sing-in.html"),3600);
+        });
+      }
