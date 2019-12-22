@@ -91,7 +91,7 @@
     if (response.status === 'connected') {   // Logged into your webpage and Facebook.
       testAPI();  
       FB.Event.subscribe('auth.login', function () {
-      window.location = "head-menu.html";
+      window.location.replace("head-menu.html");
   });
 
     } else {                                 // Not logged into your webpage or we are unable to tell.
@@ -122,7 +122,7 @@
     });
   };
 
-  
+
   
   (function(d, s, id) {                      // Load the SDK asynchronously
     var js, fjs = d.getElementsByTagName(s)[0];
