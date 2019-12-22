@@ -29,12 +29,14 @@ axios.post(url, {query: timeRoutineQuery})
         let time = document.getElementById("time");
         time.textContent = pageRutine.time;
 
-        var li = document.createElement("li");
-        let rutinesEl = document.getElementsByTagName("LI");
+        let listRoutines = document.getElementById('myUL');
+       // let rutinesEl = document.getElementsByTagName("LI");
         let rutinesArr = pageRutine.rutines;
-        for(let i = 0; i < rutinesEl.length; i++ ) {
-          var li = document.createElement("li");
-          rutinesEl[i].textContent = rutinesArr[i].bodyRutine;
+        for(let r of rutinesArr) {
+          let li = document.createElement("li");
+          li.textContent = r.bodyRutine;
+          listRoutines.append(li);
+         
         }
     })
 ; 
