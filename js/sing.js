@@ -92,13 +92,7 @@
       testAPI();  
     //  FB.Event.subscribe('auth.login', function () {
       //window.location.replace("head-menu.html");
-  }
-  );
-
-    } else {                                 // Not logged into your webpage or we are unable to tell.
-      /*document.getElementById('status').innerHTML = 'Please log ' +
-        'into this webpage.';*/
-    }
+  });
   }
 
 
@@ -139,7 +133,5 @@
     FB.api('/me', function(response) {
       console.log('Successful login for: ' + response.name);
       window.location.replace("head-menu.html");
-     /* document.getElementById('status').innerHTML =
-        'Thanks for logging in, ' + response.name + '!';*/
     });
   }
