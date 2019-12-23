@@ -92,7 +92,7 @@
       testAPI();  
     //  FB.Event.subscribe('auth.login', function () {
       //window.location.replace("head-menu.html");
-  });
+  };
   }
 
 
