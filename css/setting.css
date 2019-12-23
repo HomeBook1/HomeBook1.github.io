@@ -220,12 +220,15 @@
 
 	.content {
 	    padding: 0 18px;
-	    max-height: 0;
+	    1max-height: 0;
 	    overflow: hidden;
 	    transition: max-height 0.2s ease-out;
 	    background-color: #e3e3e3;
+	    display: none;
 	}
-	
+	.active{
+		display: block;
+	}
 	
 }
 
