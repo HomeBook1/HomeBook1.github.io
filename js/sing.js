@@ -90,9 +90,10 @@
     console.log(response);                   // The current login status of the person.
     if (response.status === 'connected') {   // Logged into your webpage and Facebook.
       testAPI();  
-      FB.Event.subscribe('auth.login', function () {
-      window.location.replace("head-menu.html");
-  });
+    //  FB.Event.subscribe('auth.login', function () {
+      //window.location.replace("head-menu.html");
+  }
+  );
 
     } else {                                 // Not logged into your webpage or we are unable to tell.
       /*document.getElementById('status').innerHTML = 'Please log ' +
@@ -137,6 +138,7 @@
     console.log('Welcome!  Fetching your information.... ');
     FB.api('/me', function(response) {
       console.log('Successful login for: ' + response.name);
+      window.location.replace("head-menu.html");
      /* document.getElementById('status').innerHTML =
         'Thanks for logging in, ' + response.name + '!';*/
     });
