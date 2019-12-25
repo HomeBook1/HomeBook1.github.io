@@ -34,7 +34,7 @@
 	}
 
 	.main{
-		grid-template-rows:1fr 1fr 0.5fr;
+		grid-template-rows:0.1fr 1fr 0.1fr;
 	}
 
 	.head-logo{
@@ -65,12 +65,6 @@
 		letter-spacing: 1px;
 		line-height: 1.5;
 		color:#8B53A6;
-	}
-
-		.container-label{
-		display: grid;	
-		grid-template-rows:0.1fr 0.1fr 0.1fr 0.1fr ;
-		grid-gap: 1%;
 	}
 
 
@@ -127,10 +121,6 @@
 	    display: none;
 	}
 
-/*	.container input:checked ~ .checkmark:after {
-	    display: block;
-	}*/
-
 
 
 
@@ -148,9 +138,6 @@
 	.active, .dot:hover {
 	  background-color: #8B53A6;
 	}
-
-	/*Loader*/
-
 
 }
 

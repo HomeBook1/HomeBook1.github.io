@@ -30,7 +30,6 @@ axios.post(url, {query: timeRoutineQuery})
         time.textContent = pageRutine.time;
 
         let listRoutines = document.getElementById('myUL');
-       // let rutinesEl = document.getElementsByTagName("LI");
         let rutinesArr = pageRutine.rutines;
         for(let r of rutinesArr) {
           let li = document.createElement("li");
@@ -47,28 +46,28 @@ axios.post(url, {query: timeRoutineQuery})
 
 
 // Create a "close" button and append it to each list item
-  var myNodelist = document.getElementsByTagName("LI");
+  /*var myNodelist = document.getElementsByTagName("LI");
   var i;
   for (i = 0; i < myNodelist.length; i++) {
     var span = document.createElement("SPAN");
-    var txt = document.createTextNode("\u00D7");
+    //var txt = document.createTextNode("\u00D7");
     span.className = "close";
     span.appendChild(txt);
     myNodelist[i].appendChild(span);
-  }
+  }*/
 
   // Click on a close button to hide the current list item
-  var close = document.getElementsByClassName("close");
+  /*var close = document.getElementsByClassName("close");
   var i;
   for (i = 0; i < close.length; i++) {
     close[i].onclick = function() {
       var div = this.parentElement;
       div.style.display = "none";
     }
-  }
+  }*/
 
-  // Add a "checked" symbol when clicking on a list item
-  var list = document.querySelector('ul');
+  // "checked" 
+  let list = document.querySelector('ul');
   list.addEventListener('click', function(ev) {
     if (ev.target.tagName === 'LI') {
       ev.target.classList.toggle('checked');
@@ -81,9 +80,9 @@ axios.post(url, {query: timeRoutineQuery})
 
   // Create a new list item when clicking on the "Add" button
   function newElement() {
-    var li = document.createElement("li");
-    var inputValue = document.getElementById("myInput").value;
-    var t = document.createTextNode(inputValue);
+    let li = document.createElement("li");
+    let inputValue = document.getElementById("myInput").value;
+    let t = document.createTextNode(inputValue);
     li.appendChild(t);
     if (inputValue === '') {
       alert("You must write something!");
@@ -92,8 +91,8 @@ axios.post(url, {query: timeRoutineQuery})
     }
     document.getElementById("myInput").value = "";
 
-    var span = document.createElement("SPAN");
-    var txt = document.createTextNode("\u00D7");
+    let span = document.createElement("SPAN");
+    let txt = document.createTextNode("");
 
     span.className = "close";
     span.appendChild(txt);
@@ -101,10 +100,12 @@ axios.post(url, {query: timeRoutineQuery})
 
     for (i = 0; i < close.length; i++) {
       close[i].onclick = function() {
-        var div = this.parentElement;
+        let div = this.parentElement;
         div.style.display = "none";
       }
     };
+
+    //mutation
 
     let bodyRut = li.textContent;
     let newRutine = `mutation createRutine{
